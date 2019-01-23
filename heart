@@ -3,36 +3,46 @@
 <style>
   .heart {
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
     height: 100px;
     width: 100px;
-    background: transparent;
+    background: #9400D3;
     margin: auto;
-    border-radius: 50%;
 	transform: rotate(-45deg);
+  animation-name: rainbow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite; 
   }
-  
   .heart::after {
-  background-color: transparent;
+  background-color: #9400D3;
   content: "";
   border-radius: 50%;
   position: absolute;
+  width: 100px;
+  height: 100px;
   top: 0px;
-  left: 25px;
+  left: 50px;
+  animation-name: rainbow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
-
 .heart::before {
   content: "";
-  background-color: transparent;
+  background-color: #9400D3;
   border-radius: 50%;
   position: absolute;
-  top: -25px;
+  width: 100px;
+  height: 100px;
+  top: -50px;
   left: 0px;
+  animation-name: rainbow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
-  #shape {
-  animation-name: rainbow;
-  animation-duration: 7s;  
-  }
   @keyframes rainbow {
     0% {
       background-color: #9400D3;
@@ -43,8 +53,8 @@
     32% {
       background-color: #0000FF;
     }
-	48% {
-		background-color: #00FF00;
+    48% {
+	background-color: #00FF00;
 	}
 	68% {
 	background-color: #FFFF00;
@@ -56,6 +66,7 @@
 	background-color: #FF0000;
 	}
   }
+  
 </style>
-<div class="heart" id="shape"></div>
+<div class="heart"></div>
 </html>
