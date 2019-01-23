@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <style>
+   body {
+    background: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59)
+    }
   .heart {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-    height: 100px;
-    width: 100px;
-    background: #9400D3;
-    margin: auto;
-	transform: rotate(-45deg);
+  height: 100px;
+  width: 100px;
+  background: #9400D3;
+  margin: auto;
+  transform: rotate(-45deg);
   animation-name: rainbow;
   animation-duration: 6s;
   animation-iteration-count: infinite; 
@@ -43,7 +46,7 @@
   animation-iteration-count: infinite;
 }
 
-  @keyframes rainbow {
+@keyframes rainbow {
     0% {
       background-color: #9400D3;
     }
@@ -51,22 +54,24 @@
       background-color: #4B0082;
     }
     32% {
-      background-color: #0000FF;
+    background-color: #0000FF;
     }
     48% {
-	background-color: #00FF00;
+    background-color: #00FF00;
 	}
-	68% {
-	background-color: #FFFF00;
+    68% {
+    background-color: #FFFF00;
 	}
-	85% {
-	background-color: #FF7F00;
+    85% {
+    background-color: #FF7F00;
 	}
-	100% {
-	background-color: #FF0000;
+    100% {
+    background-color: #FF0000;
 	}
   }
   
 </style>
+<body>
 <div class="heart"></div>
+</body>
 </html>
